@@ -1,26 +1,35 @@
-# Projeto MySQL All For One
+# Projeto All For One
 
-Este repositório é uma coleção de exercícios desenvolvidos para o aprendizado de SQL. Foi criado durante o curso da Trybe, uma escola de desenvolvimento web que utiliza metodologias ativas de aprendizagem.
+Este projeto consiste em uma série de exercícios destinados a prática dos conceitos de SQL, utilizando o banco de dados Northwind.
 
-## Sobre o Projeto
+## Instalação
 
-O projeto "MySQL All For One" foi criado para oferecer uma abordagem prática e progressiva para o aprendizado do SQL. Ele contém uma série de desafios que vão do básico ao avançado, permitindo ao usuário melhorar suas habilidades em SQL ao longo do tempo.
+### Com Docker
 
-## Como usar
+- Certifique-se de que seu docker-compose está na versão 1.29 ou superior.
+- Execute os serviços node e db com o comando `docker-compose up -d`.
+- Para iniciar o container, utilize o comando `docker exec -it all_for_one bash`.
+- As credenciais de acesso ao banco de dados estão definidas no arquivo `docker-compose.yml` e são acessíveis no container através das variáveis de ambiente `MYSQL_USER` e `MYSQL_PASSWORD`.
+- Instale as dependências com `npm install` dentro do container.
+- Lembre-se: todos os comandos disponíveis no `package.json` devem ser executados dentro do container.
 
-Para utilizar este repositório, siga os seguintes passos:
+### Sem Docker
 
-1. Clone o repositório em sua máquina local utilizando `git clone https://github.com/guilhermerodriguess/project-mysql-all-for-one.git`
-2. Entre no diretório do projeto com `cd project-mysql-all-for-one`
+- Instale as dependências com `npm install`.
+- Certifique-se de que tem o node instalado na versão 16.
 
-## Conclusão
+## Requisitos do Projeto
 
-Este projeto é um ótimo recurso para quem deseja aprender SQL. Os exercícios são projetados para ensinar as várias facetas do SQL, desde a criação de tabelas até consultas mais complexas. É uma ótima maneira de obter prática prática com o SQL.
+O objetivo do projeto é desenvolver queries SQL para encontrar as informações requisitadas pelos desafios. Os desafios estão divididos em:
 
-## Contribuição
+- Desafios Iniciais: queries básicas que envolvem a manipulação dos dados da tabela `products`.
+- Desafios de Filtragem de Dados: queries que envolvem a filtragem dos dados da tabela `purchase_orders`.
+- Desafios de Manipulação de Tabelas: operações de inserção, atualização e exclusão de dados na tabela `order_details`.
 
-Este é um projeto aberto e encorajamos contribuições. Se você encontrar algum problema ou acha que um exercício pode ser melhorado, sinta-se à vontade para abrir um problema ou fazer um pull request.
+## Como Contribuir
+
+Se encontrar algum erro ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma Issue ou enviar um Pull Request.
 
 ## Licença
 
-Este projeto é licenciado sob a licença MIT.
+Este projeto está licenciado sob a Licença MIT.
