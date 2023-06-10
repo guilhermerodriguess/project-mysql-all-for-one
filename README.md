@@ -1,35 +1,35 @@
-# Projeto All For One
+# Project All For One
 
-Este projeto consiste em uma série de exercícios destinados a prática dos conceitos de SQL, utilizando o banco de dados Northwind.
+This project consists of a series of exercises designed to practice SQL concepts using the Northwind database.
 
-## Instalação
+## Installation
 
-### Com Docker
+### With Docker
 
-- Certifique-se de que seu docker-compose está na versão 1.29 ou superior.
-- Execute os serviços node e db com o comando `docker-compose up -d`.
-- Para iniciar o container, utilize o comando `docker exec -it all_for_one bash`.
-- As credenciais de acesso ao banco de dados estão definidas no arquivo `docker-compose.yml` e são acessíveis no container através das variáveis de ambiente `MYSQL_USER` e `MYSQL_PASSWORD`.
-- Instale as dependências com `npm install` dentro do container.
-- Lembre-se: todos os comandos disponíveis no `package.json` devem ser executados dentro do container.
+- Make sure your docker-compose is on version 1.29 or higher.
+- Run the node and db services with the `docker-compose up -d` command.
+- To start the container, use the command `docker exec -it all_for_one bash`.
+- The database access credentials are defined in the `docker-compose.yml` file and are accessible in the container through the `MYSQL_USER` and `MYSQL_PASSWORD` environment variables.
+- Install dependencies with `npm install` inside the container.
+- Remember: all commands available in `package.json` must be executed inside the container.
 
-### Sem Docker
+### Without Docker
 
-- Instale as dependências com `npm install`.
-- Certifique-se de que tem o node instalado na versão 16.
+- Install dependencies with `npm install`.
+- Make sure you have node installed in version 16.
 
-## Requisitos do Projeto
+## Project Requirements
 
-O objetivo do projeto é desenvolver queries SQL para encontrar as informações requisitadas pelos desafios. Os desafios estão divididos em:
+The objective of the project is to develop SQL queries to find the information required by the challenges. The challenges are divided into:
 
-- Desafios Iniciais: queries básicas que envolvem a manipulação dos dados da tabela `products`.
-- Desafios de Filtragem de Dados: queries que envolvem a filtragem dos dados da tabela `purchase_orders`.
-- Desafios de Manipulação de Tabelas: operações de inserção, atualização e exclusão de dados na tabela `order_details`.
+- Initial Challenges: basic queries that involve manipulating data from the `products` table.
+- Data Filtering Challenges: queries that involve filtering data from the `purchase_orders` table.
+- Table Manipulation Challenges: data insertion, update and deletion operations in the `order_details` table.
 
-## Como Contribuir
+## How to Contribute
 
-Se encontrar algum erro ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma Issue ou enviar um Pull Request.
+If you find any bugs or have any suggestions for improvement, feel free to open an Issue or submit a Pull Request.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a Licença MIT.
+This project is licensed under the MIT License.
